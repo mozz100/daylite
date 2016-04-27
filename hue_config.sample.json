@@ -7,29 +7,36 @@
     "lights": {
         "6": {
             "bri": 254,
+            "on": true,
             "ct": "auto"
         },
         "9": {
             "bri": 254,
+            "on": true,
             "ct": "auto"
         },
         "11": {
             "bri": 254,
+            "on": true,
             "ct": "auto"
         },
         "12": {
+            "on": true,
             "bri": 254
         },
         "13": {
             "bri": 254,
+            "on": true,
             "ct": "auto"
         },
         "14": {
             "bri": 254,
+            "on": true,
             "ct": "auto"
         },
         "15": {
             "bri": 254,
+            "on": true,
             "ct": "auto"
         }
     },
