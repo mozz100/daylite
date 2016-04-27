@@ -1,0 +1,4 @@
+.env
+*.pyc
+hue_config.json
+

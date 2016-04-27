@@ -1,0 +1,42 @@
+{
+    "bridge": {
+        "username": "xxx",
+        "address":  "hue"
+    },
+    "scene_id": "xxx",
+    "lights": {
+        "6": {
+            "bri": 254,
+            "ct": "auto"
+        },
+        "9": {
+            "bri": 254,
+            "ct": "auto"
+        },
+        "11": {
+            "bri": 254,
+            "ct": "auto"
+        },
+        "12": {
+            "bri": 254
+        },
+        "13": {
+            "bri": 254,
+            "ct": "auto"
+        },
+        "14": {
+            "bri": 254,
+            "ct": "auto"
+        },
+        "15": {
+            "bri": 254,
+            "ct": "auto"
+        }
+    },
+    "sensor_id": "5",
+    "rule_id": "3",
+    "tickbeat": {
+        "url": "http://xxx.tickbeat.com/beats/yyy/tick",
+        "token": "xxx"
+    }
+}
