@@ -14,6 +14,7 @@ comes on.  Tapping again adjusts "white" to the current time.
 
     virtualenv .env
     source .env/bin/activate
+    pip install pytz
     pip install -r requirements.txt
     cp hue_config.sample.json hue_config.json # edit to include secret params
     python daylite.py
