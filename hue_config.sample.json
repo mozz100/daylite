@@ -40,7 +40,6 @@
             "ct": "auto"
         }
     },
-    "sensor_id": "5",
     "rule_id": "3",
     "tickbeat": {
         "url": "http://xxx.tickbeat.com/beats/yyy/tick",
