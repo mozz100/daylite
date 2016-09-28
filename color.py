@@ -9,8 +9,8 @@ LOCATION = Location(('Cambridge', 'Europe', 52.2053, 0.1218, 'Europe/London', 6)
 WARM = 500      # ct value. Max poss value is 500. Too warm?
 COLD = 242      # ct value. Min poss value is 153.
 EARLY = 3       # at 3am (UTC) jump from warm to cold for morning
-START_SLOPE = 2 # hours before dusk
-END_SLOPE = 0.5 # hours after dusk
+START_SLOPE = 3 # hours before dusk
+END_SLOPE = 1.0 # hours after dusk
 
 def get_color(when):
     """
