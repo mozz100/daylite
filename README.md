@@ -19,7 +19,7 @@ comes on.  Tapping again adjusts "white" to the current time.
     cp hue_config.sample.json hue_config.json # edit to include secret params
     python daylite.py
 
-    # set up the above as a 1 hour cron job. Remember end crontab with blank line
-    30 * * * * /home/pi/daylite/.env/bin/python /home/pi/daylite/daylite.py >> /dev/null
+    # set up the above as a cron job. Remember end crontab with blank line
+    */15 * * * * /home/pi/daylite/.env/bin/python /home/pi/daylite/daylite.py >> /dev/null
 
 
