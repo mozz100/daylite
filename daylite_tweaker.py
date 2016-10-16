@@ -59,14 +59,18 @@ for light_id in LIGHT_IDS:
 
     name = light['name']
     state = 'on' if light['state']['on'] else 'off'
+    bri = light['state']['bri']
     
     # If the light is on and it has a 'ct' setting...
     if state == 'on':
         if 'ct' in light['state']:
-            # ...set its colour temperature to daytime-optimal value
-            action = 'setting to %d...' % ct
-            bridge.lights[light_id].state(ct=ct)
-            action += ' done'
+            if bri == 253 or light_id==2:
+                # ...set its colour temperature to daytime-optimal value
+                action = 'setting to %d...' % ct
+                bridge.lights[light_id].state(ct=ct)
+                action += ' done'
+            else:
+                action = 'bri was %d - no action' % bri
         else:
             action = 'hue lux - no action'
     else:
