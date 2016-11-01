@@ -30,7 +30,7 @@ To use as a cron job, put this sort of thing in crontab (remember end with a bla
 
 """
 
-LIGHT_IDS = [2, ] + [6, 9, 11, 12, 13, 14, 15]  # sprudy plus kitchen
+LIGHT_IDS = [19, ] + [6, 9, 11, 12, 13, 14, 15]  # sprudy plus kitchen
 
 from qhue.qhue import Bridge
 from color import get_color
@@ -64,7 +64,7 @@ for light_id in LIGHT_IDS:
     # If the light is on and it has a 'ct' setting...
     if state == 'on':
         if 'ct' in light['state']:
-            if bri == 253 or light_id==2:
+            if bri == 253 or light_id==19:  # only act on certain lights in certain states
                 # ...set its colour temperature to daytime-optimal value
                 action = 'setting to %d...' % ct
                 bridge.lights[light_id].state(ct=ct)
