@@ -17,7 +17,6 @@ Call with -v to see what's going on.  Example output:
     9  - Wall washer E        - off - no action
     11 - Kitchen fruitbowl    - off - no action
     12 - Wall washer N Lux    - off - no action
-    13 - Wall washer W        - off - no action
     14 - Kitchen table        - off - no action
     15 - Kitchen fridge       - off - no action
 
@@ -30,7 +29,7 @@ To use as a cron job, put this sort of thing in crontab (remember end with a bla
 
 """
 
-LIGHT_IDS = [19, ] + [6, 9, 11, 12, 13, 14, 15]  # sprudy plus kitchen
+LIGHT_IDS = [19, ] + [6, 9, 11, 12, 14, 15]  # sprudy plus kitchen
 
 from qhue.qhue import Bridge
 from color import get_color
