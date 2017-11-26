@@ -19,6 +19,10 @@ auto["ct"], explanation = get_color(datetime.datetime.now(tz=UTC))
 scene_id = config["scene_id"]
 rule_id  = config["rule_id"]
 
+# Set lights for scene if necessary
+if not sorted(bridge.scenes[scene_id]()['lights']) == sorted(config['lights'].keys()):
+  bridge.scenes[scene_id](name='daylite',lights=config['lights'].keys())
+
 # Mod lightstates for specified scene
 for light_id in config["lights"].keys():
     settings = config["lights"][light_id]
