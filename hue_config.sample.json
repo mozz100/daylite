@@ -3,46 +3,46 @@
         "username": "xxx",
         "address":  "hue"
     },
-    "scene_id": "xxx",
+    "scene_id": "UKBuEnZKLvXZ1uH",
     "lights": {
         "6": {
             "bri": 253,
-            "on": true,
+            "on":  true,
             "ct": "auto"
         },
         "9": {
             "bri": 253,
-            "on": true,
+            "on":  true,
             "ct": "auto"
         },
         "11": {
             "bri": 253,
-            "on": true,
+            "on":  true,
             "ct": "auto"
         },
         "12": {
-            "on": true,
+            "on":  true,
             "bri": 253
-        },
-        "13": {
-            "bri": 253,
-            "on": true,
-            "ct": "auto"
         },
         "14": {
             "bri": 253,
-            "on": true,
+            "on":  true,
             "ct": "auto"
         },
         "15": {
             "bri": 253,
-            "on": true,
+            "on":  true,
+            "ct": "auto"
+        },
+        "20": {
+            "bri": 253,
+            "on":  true,
             "ct": "auto"
         }
     },
-    "rule_id": "3",
+    "rule_id": "4",
     "tickbeat": {
-        "url": "http://xxx.tickbeat.com/beats/yyy/tick",
+        "url": "http://www.tickbeat.com/beats/daylite/tick",
         "token": "xxx"
     }
 }
