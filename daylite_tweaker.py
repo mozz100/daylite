@@ -29,7 +29,7 @@ To use as a cron job, put this sort of thing in crontab (remember end with a bla
 
 """
 
-LIGHT_IDS = [19, ] + [6, 9, 11, 12, 14, 15]  # sprudy plus kitchen
+LIGHT_IDS = [19, ] + [6, 9, 11, 12, 14, 15, 20]  # sprudy plus kitchen
 
 from qhue.qhue import Bridge
 from color import get_color
